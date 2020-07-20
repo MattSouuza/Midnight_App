@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WSTower_Midnight.Views.LoginView">
+    <ContentPage.Content>
+        <StackLayout Padding="10, 20, 10, 20" BackgroundColor="#E3A3CE">
+            <StackLayout Padding="20" BackgroundColor="#DB36A4">
+                <StackLayout>
+                    <Image Source="profile.png" HeightRequest="100"/>
+                    <Label Text="Faça login" FontSize="25" TextColor="Black" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    <Entry Placeholder="Email" VerticalOptions="Center" Margin="5, 20, 5, 20" BackgroundColor="White" />
+                    <Entry IsPassword="True" Placeholder="Senha" VerticalOptions="Center" BackgroundColor="White" Margin="5, 40, 5, 40" />
+                </StackLayout>
+
+                <StackLayout>
+                    <Button Text="Logar" WidthRequest="200" BackgroundColor="#312F2F" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Login"/>
+                    <Button Text="Cadastra-se" WidthRequest="200" BackgroundColor="#312F2F" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Cadastro"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

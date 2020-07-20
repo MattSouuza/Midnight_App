@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WSTower_Midnight.Views.CadastroView">
+    <ContentPage.Content>
+        <StackLayout Padding="20" BackgroundColor="#E3A3CE">
+            <StackLayout BackgroundColor="#DB36A4">
+                <StackLayout VerticalOptions="CenterAndExpand" Spacing="20" Padding="30, 60">
+                    <Image Source="profile.png" HeightRequest="100" TranslationY="-20"/>
+                    <Entry Placeholder="Nome*" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+                    <Entry Placeholder="Email*" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+                    <Entry IsPassword="True" Placeholder="Senha" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+                </StackLayout>
+                <StackLayout TranslationY="-20">
+                    <Button Text="Concluído" BackgroundColor="#312F2F" TextColor="White" WidthRequest="200" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Concluido"/>
+                    <Button Text="Voltar" HorizontalOptions="FillAndExpand" TextColor="Blue" BackgroundColor="Transparent" Clicked="ButtonClicked_Voltar"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

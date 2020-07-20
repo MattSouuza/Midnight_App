@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WSTower_Midnight.Views.CadastroEventoView">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+
+            <StackLayout VerticalOptions="CenterAndExpand" Spacing="15" TranslationY="-25">
+                <Image Source="icon.png" TranslationY="-20"/>
+                <Entry Placeholder="Nome do Evento*" HorizontalOptions="FillAndExpand"/>
+                <Entry Placeholder="Local do Evento*" HorizontalOptions="FillAndExpand"/>
+                <Entry Placeholder="Descrição do Evento*" HorizontalOptions="FillAndExpand"/>
+                <Entry Placeholder="Data de início do Evento*" HorizontalOptions="FillAndExpand"/>
+                <Entry Placeholder="Data do Término do Evento*" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <!--Falta colocar os botões de cocncluído e voltar na tela, n coloquei pois estava dando erro na hora de compilar
+            e par colocar esses botões necessito da tela principal-->
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
