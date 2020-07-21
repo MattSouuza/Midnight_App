@@ -11,8 +11,12 @@
                 <StackLayout VerticalOptions="CenterAndExpand" Spacing="20" Padding="30, 60">
                     <Image Source="profile.png" HeightRequest="100" TranslationY="-20"/>
                     <Entry Placeholder="Nome*" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
-                    <Entry Placeholder="Email*" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
-                    <Entry IsPassword="True" Placeholder="Senha" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+                    <Entry Placeholder="Email*" HorizontalOptions="FillAndExpand" BackgroundColor="White" x:Name="txtUsuario"/>
+                    <Entry IsPassword="True" Placeholder="Senha" HorizontalOptions="FillAndExpand" BackgroundColor="White" x:Name="txtSenha"/>
+                    <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+                        <Label Text="Salvar a senha?" TextColor="Black" FontSize="20"/>
+                        <Switch x:Name="SalvarSenha" IsToggled="True" HorizontalOptions="Start"/>
+                    </StackLayout>
                 </StackLayout>
                 <StackLayout TranslationY="-20">
                     <Button Text="Concluído" BackgroundColor="#312F2F" TextColor="White" WidthRequest="200" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Concluido"/>

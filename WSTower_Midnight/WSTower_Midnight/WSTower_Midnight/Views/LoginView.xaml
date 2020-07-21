@@ -11,8 +11,8 @@
                 <StackLayout>
                     <Image Source="profile.png" HeightRequest="100"/>
                     <Label Text="Faça login" FontSize="25" TextColor="Black" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
-                    <Entry Placeholder="Email" VerticalOptions="Center" Margin="5, 20, 5, 20" BackgroundColor="White" />
-                    <Entry IsPassword="True" Placeholder="Senha" VerticalOptions="Center" BackgroundColor="White" Margin="5, 40, 5, 40" />
+                    <Entry Placeholder="Email" VerticalOptions="Center" Margin="5, 20, 5, 20" BackgroundColor="White" x:Name="txtUsuario"  TextChanged="Email_TextChanged"/>
+                    <Entry IsPassword="True" Placeholder="Senha" VerticalOptions="Center" BackgroundColor="White" x:Name="txtSenha" Margin="5, 40, 5, 40" />
                 </StackLayout>
 
                 <StackLayout>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,9 @@ namespace WSTower_Midnight.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginView : ContentPage
     {
+        string _fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "NotesAppLogin.txt");
+        bool _message = false;
+
         public LoginView()
         {
             InitializeComponent();
@@ -27,5 +31,36 @@ namespace WSTower_Midnight.Views
             Navigation.PushAsync(new CadastroView());
         }
 
+        private async void Email_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                var Email = txtUsuario.Text ?? "";
+
+                if (!string.IsNullOrEmpty(Email) && Email.Length >= 4)
+                {
+                    var usuarios = await App.Database.GetUsuarioAsync();
+
+                    var usuario = usuarios.Where(p => p.Email == Email && p.Senha != "").FirstOrDefault();
+
+                    if (usuario != null)
+                    {
+                        var result = await DisplayAlert("", "Encontramos uma senha salva para esse usuário, deseja usar esta senha?", "SIM", "NÃO");
+
+                        if (result)
+                        {
+                            txtSenha.Text = usuario.Senha;
+                            txtSenha.IsPassword = false;
+                        }
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+        }
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paulo\\source\\repos\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj": {}
+    "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj": {}
   },
   "projects": {
-    "C:\\Users\\paulo\\source\\repos\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj": {
+    "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paulo\\source\\repos\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj",
+        "projectUniqueName": "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj",
         "projectName": "WSTower_Midnight",
-        "projectPath": "C:\\Users\\paulo\\source\\repos\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj",
-        "packagesPath": "C:\\Users\\paulo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paulo\\source\\repos\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\obj\\",
+        "projectPath": "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj",
+        "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -55,6 +55,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.5.0.495, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           },
           "imports": [
