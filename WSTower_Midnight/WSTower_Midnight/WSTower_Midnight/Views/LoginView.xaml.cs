@@ -13,8 +13,6 @@ namespace WSTower_Midnight.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginView : ContentPage
     {
-        string _fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "NotesAppLogin.txt");
-        bool _message = false;
 
         public LoginView()
         {

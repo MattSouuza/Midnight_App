@@ -40,7 +40,6 @@ C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midn
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\bin\Debug\netstandard2.0\WSTower_Midnight.pdb
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\WSTower_Midnight.csprojAssemblyReference.cache
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\Views\CadastroEventoView.xaml.g.cs
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\Views\CadastroView.xaml.g.cs
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\Views\LoginView.xaml.g.cs
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\Views\PrincipalView.xaml.g.cs
@@ -52,3 +51,4 @@ C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midn
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\WSTower_Midnight.pdb
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\WSTower_Midnight.csproj.CoreCompileInputs.cache
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\Views\EventoView.xaml.g.cs

@@ -32,16 +32,23 @@ namespace WSTower_Midnight.Views
                     }
                 }
 
+                if(string.IsNullOrEmpty(txtNome.Text))
+                {
+                    await DisplayAlert("ATENÇÃO", "Informe o Nome", "OK");
+                    return;
+                }
+
                 if (!string.IsNullOrWhiteSpace(txtUsuario.Text))
                 {
                     if (txtUsuario.Text.Length >= 5)
                     {
                         await App.Database.SaveUsuarioAsync(new Usuario
                         {
+                            Nome = txtNome.Text,
                             Email = txtUsuario.Text,
                             Senha = gravaSenha ? txtSenha.Text : "",
                         });
-
+                       
                         txtUsuario.Text = txtSenha.Text = string.Empty;
 
                         await DisplayAlert("SUCESSO", "O usuário foi cadastrado com sucesso.", "OK");
@@ -54,7 +61,7 @@ namespace WSTower_Midnight.Views
                 }
                 else
                 {
-                    await DisplayAlert("ATENÇÃO", "Informe o nome do usuário.", "OK");
+                    await DisplayAlert("ATENÇÃO", "Informe o Email do usuário.", "OK");
                 }
             }
             catch (Exception ex)

@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace WSTower_Midnight.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PrincipalView : MasterDetailPage
+    public partial class PrincipalView : ContentPage
     {
         public PrincipalView()
         {
