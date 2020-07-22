@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using WSTower_Midnight.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,14 +19,24 @@ namespace WSTower_Midnight.Views
             InitializeComponent();
         }
 
-        private void ButtonClicked_Login(object sender, EventArgs e)
+        private async void ButtonClicked_Login(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new PrincipalView());
+
+            if (string.IsNullOrEmpty(txtUsuario.Text) || string.IsNullOrEmpty(txtSenha.Text))
+            {
+                await DisplayAlert("ATENÇÃO", "Informe o usuario e a senha senha", "OK");
+                return;
+            }
+            else
+            {
+                await Navigation.PushAsync(new PrincipalView());
+            }
+
         }
 
         private void ButtonClicked_Cadastro(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new CadastroView());
+        {        
+                 Navigation.PushAsync(new CadastroView());
         }
 
         private async void Email_TextChanged(object sender, TextChangedEventArgs e)
@@ -48,7 +58,7 @@ namespace WSTower_Midnight.Views
                         if (result)
                         {
                             txtSenha.Text = usuario.Senha;
-                            txtSenha.IsPassword = false;
+                            txtSenha.IsPassword = true;
                         }
 
                     }
