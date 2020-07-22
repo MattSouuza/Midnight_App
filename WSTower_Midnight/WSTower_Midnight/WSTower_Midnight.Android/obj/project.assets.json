@@ -2291,24 +2291,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\paulo\\.nuget\\packages\\": {},
+    "C:\\Users\\fic\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paulo\\source\\repos\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.Android\\WSTower_Midnight.Android.csproj",
+      "projectUniqueName": "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.Android\\WSTower_Midnight.Android.csproj",
       "projectName": "WSTower_Midnight.Android",
-      "projectPath": "C:\\Users\\paulo\\source\\repos\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.Android\\WSTower_Midnight.Android.csproj",
-      "packagesPath": "C:\\Users\\paulo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paulo\\source\\repos\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.Android\\obj\\",
+      "projectPath": "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.Android\\WSTower_Midnight.Android.csproj",
+      "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2322,8 +2322,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\paulo\\source\\repos\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj": {
-              "projectPath": "C:\\Users\\paulo\\source\\repos\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj"
+            "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj": {
+              "projectPath": "C:\\Users\\fic\\Desktop\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj"
             }
           }
         }

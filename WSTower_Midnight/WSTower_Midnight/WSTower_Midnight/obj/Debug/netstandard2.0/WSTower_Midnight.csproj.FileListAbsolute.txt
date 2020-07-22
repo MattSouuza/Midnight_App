@@ -70,3 +70,4 @@ C:\Users\paulo\source\repos\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTow
 C:\Users\paulo\source\repos\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\WSTower_Midnight.pdb
 C:\Users\paulo\source\repos\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\WSTower_Midnight.csproj.CoreCompileInputs.cache
 C:\Users\paulo\source\repos\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight\obj\Debug\netstandard2.0\Views\CadastroEvento.xaml.g.cs

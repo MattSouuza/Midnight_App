@@ -10,6 +10,9 @@ namespace WSTower_Midnight
     public partial class App : Application
     {
         static UsuarioRepository database;
+
+        static EventoRepository database1;
+
         public static UsuarioRepository Database
         {
             get
@@ -22,11 +25,24 @@ namespace WSTower_Midnight
             }
         }
 
+        public static EventoRepository Database1
+        {
+            get
+            {
+                if (database1 == null)
+                {
+                    database1 = new EventoRepository(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Evento.db3"));
+                }
+                return database1;
+            }
+        }
+
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new PrincipalView());
+            MainPage = new NavigationPage(new CadastroEvento());
         }
 
         protected override void OnStart()
