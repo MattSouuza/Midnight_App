@@ -3,11 +3,61 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              mc:Ignorable="d"
              x:Class="WSTower_Midnight.Views.PrincipalView">
+
+
+    <!--<cv:CarouselViewControl
+    x:Name="carousel" 
+    ItemsSource="{Binding Views}"
+    VerticalOptions="Start"
+    ShowArrows="False"
+    ShowIndicators="False"
+    PositionSelectedCommand="{Binding PositionCommand}"
+    PositionSelected="Handle_PositionSelected"
+    Scrolled="Handle_Scrolled"
+    Orientation="Horizontal">
+
+    </cv:CarouselViewControl>-->
+        
     <ContentPage.Content>
-        <StackLayout>
-            <Image Source="barada.png" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal">
+                            <BoxView Color="{Binding Color}"
+                                                HeightRequest="32"
+                                                WidthRequest="32"
+                                                VerticalOptions="Center" />
+                            <Label Text="{Binding FriendlyName}"
+                                            FontSize="24"
+                                            VerticalOptions="Center" />
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+                <StackLayout VerticalOptions="Start" BackgroundColor="#E3A3CE">
+                    <Label Text="Sobre nós" FontSize="23" TextColor="Black" Padding="27, 20" VerticalOptions="Start" HorizontalOptions="Center" />
+
+                    <Label Text="A WSTowers Foi fundada em 1980 com o intuito de promover locais para que eventos sejam feitos. No ano de 2005 fomos eleito os melhores em grandes organizações de eventos." FontSize="15" Margin="50, 0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Button Text="Saiba mais" WidthRequest="200" CornerRadius="50" BackgroundColor="#312F2F" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Sobre" Margin="0, 30"/>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="Start" BackgroundColor="#312F2F">
+                    <Label Text="Participe de eventos!" FontSize="23" TextColor="White" Padding="27, 20" VerticalOptions="Start" HorizontalOptions="Center" />
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Image Source="Rock.png" Margin="10, 0, 10, 20" HeightRequest="140" WidthRequest="140"/>
+                        <Image Source="Rave.png" Margin="10, 0, 10, 20" HeightRequest="140" WidthRequest="140"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Image Source="Lapa.png" Margin="10, 0 ,10, 20" HeightRequest="140" WidthRequest="140"/>
+                        <Image Source="bgs.png" Margin="10, 0 ,10, 20" HeightRequest="140" WidthRequest="140"/>
+                    </StackLayout>
+                    <Button Text="Ver Eventos" WidthRequest="200" CornerRadius="50" BackgroundColor="#DB36A4" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Evento" Margin="0, 0, 0, 30"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

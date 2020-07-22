@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ON3e/Aw7ur+//G6L3j8u+KgxY9W+WdDcobUdJWcRrjKIq6TxotpBWmNOepZnXbichmQXlWIk/gJmYXb3yBj2Cw==",
+  "dgSpecHash": "opYxcvcjSLFl20Ts0xV9hFaFH1QYSaBU5wW6cjJ1e3il7TNCRBiXtZYwsz+mwvSlSw3uJAIaxoSWxl8RMe6xKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\paulo\\source\\repos\\Midnight_App\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight\\WSTower_Midnight.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\paulo\\.nuget\\packages\\carouselview.formsplugin\\5.2.0\\carouselview.formsplugin.5.2.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
