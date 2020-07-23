@@ -21,7 +21,6 @@ namespace WSTower_Midnight.Views
 
         private async void ButtonClicked_Login(object sender, EventArgs e)
         {
-
             if (string.IsNullOrEmpty(txtUsuario.Text) || string.IsNullOrEmpty(txtSenha.Text))
             {
                 await DisplayAlert("ATENÇÃO", "Informe o usuario e a senha senha", "OK");
@@ -29,9 +28,16 @@ namespace WSTower_Midnight.Views
             }
             else
             {
-                await Navigation.PushAsync(new PrincipalView());
+                var usuario = await App.Database.Verificacao(txtUsuario.Text, txtSenha.Text);
+                if (usuario == null)
+                {
+                    await DisplayAlert("ATENÇÃO", "Esse usuario não existe", "OK");
+                }
+                else
+                {
+                    await Navigation.PushAsync(new PrincipalView());
+                }
             }
-
         }
 
         private void ButtonClicked_Cadastro(object sender, EventArgs e)

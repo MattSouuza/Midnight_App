@@ -57,6 +57,7 @@
                         <Image Source="bgs.png" Margin="10, 0 ,10, 20" HeightRequest="140" WidthRequest="140"/>
                     </StackLayout>
                     <Button Text="Ver Eventos" WidthRequest="200" CornerRadius="50" BackgroundColor="#DB36A4" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Evento" Margin="0, 0, 0, 30"/>
+                    <Button Text="Cadastrar Evento" WidthRequest="200" CornerRadius="50" BackgroundColor="#DB36A4" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_CadastroEvento" Margin="0, 0, 0, 30"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

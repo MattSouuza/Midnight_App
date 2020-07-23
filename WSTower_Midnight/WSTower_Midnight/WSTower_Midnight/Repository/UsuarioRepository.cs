@@ -21,6 +21,11 @@ namespace WSTower_Midnight.Repository
             return _Database.Table<Usuario>().ToListAsync();
         }
 
+        public Task<Usuario> Verificacao(string email, string senha)
+        {
+            return _Database.Table<Usuario>().FirstOrDefaultAsync(u => u.Email == email && u.Senha == senha);
+        }
+
         public Task<int> SaveUsuarioAsync(Usuario usuario)
         {
             return _Database.InsertAsync(usuario);

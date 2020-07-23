@@ -40,5 +40,10 @@ namespace WSTower_Midnight.Views
         {
             Navigation.PushAsync(new EventoView());
         }
+
+        private void ButtonClicked_CadastroEvento(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CadastroEvento());
+        }
     }
 }

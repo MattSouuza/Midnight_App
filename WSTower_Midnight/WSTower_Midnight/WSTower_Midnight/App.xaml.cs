@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using WSTower_Midnight.Models;
 using WSTower_Midnight.Repository;
 using WSTower_Midnight.Views;
 using Xamarin.Forms;
@@ -42,11 +43,12 @@ namespace WSTower_Midnight
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new CadastroEvento());
+            MainPage = new NavigationPage(new LoginView());
         }
 
         protected override void OnStart()
         {
+
         }
 
         protected override void OnSleep()

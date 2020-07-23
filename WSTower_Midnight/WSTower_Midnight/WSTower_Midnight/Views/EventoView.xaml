@@ -21,15 +21,31 @@
                         </StackLayout>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
-            
-                <StackLayout>
-                    <Image Source="Rock.png" HorizontalOptions="Center" HeightRequest="200" WidthRequest="200"/>
-                    <Label Text="Rock Festival é um grande evento de rock que ocorre anualmente e move milhares de espectadores todo ano." FontSize="17" Padding="15"/>
-                    <Label Text="Local: Center expo norte" FontSize="17" Padding="15"/>
-                    <Label Text="Data: 12/11/2020 até 15/11/2020 " FontSize="17" Padding="15"/>
+
+                <StackLayout Padding="20" BackgroundColor="#E3A3CE">
+
+                    <Label Text="Eventos Disponíveis" HorizontalOptions="CenterAndExpand" Padding="15" TextColor="Black" FontSize="25"/>
+
+                    <ListView x:Name="listViewEvento" HasUnevenRows="true">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical" Padding="20" BackgroundColor="#DB36A4">
+                                        <Label Text="{Binding Nome}" TextColor="Black" FontSize="20"/>
+                                        <Image Source="barada2.jpg"/>
+                                        <Label Text="{Binding Descricao}" TextColor="Black" FontSize="15"/>
+                                        <Label Text="{Binding Local}" TextColor="Black" FontSize="15"/>
+                                        <Label Text="{Binding Data}" TextColor="Black" FontSize="15"/>
+                                        <Button Text="Participar" WidthRequest="200" CornerRadius="50" BackgroundColor="#312F2F" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
                 </StackLayout>
                 
-                <StackLayout>
+                <!--<StackLayout>
                     <Image Source="Lapa.png" HorizontalOptions="Center" HeightRequest="130" WidthRequest="130"/>
                     <Label Text="Lapa é um grande festival de eletronica que ocorre a cada dois anos. O festival é responsável por mover milhares de espectadores e companhias todo ano." FontSize="17" Padding="15"/>
                     <Label Text="Local: Center expo norte" FontSize="17" Padding="15"/>
@@ -41,7 +57,7 @@
                     <Label Text="bgs é o maior festival de games da America Latina ocorrendo anualmente. A bgs já esta em sua vigesíma edição sendo responsável por mover milhares de espectadores e companhias todo ano." FontSize="17" Padding="15"/>
                     <Label Text="Local: Center expo norte" FontSize="17" Padding="15"/>
                     <Label Text="Data: 10/08/2020 até 15/08/2020 " FontSize="17" Padding="15"/>
-                </StackLayout>
+                </StackLayout>-->
             </StackLayout>
 
         </ScrollView>
