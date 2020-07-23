@@ -28,7 +28,7 @@
                 </StackLayout>
 
                 <StackLayout>
-                    <Image Source="Logo.jpg" HeightRequest="200" WidthRequest="200"/>
+                    <Image Source="Logo2.jpg" HeightRequest="200" WidthRequest="200"/>
                     <Label Text="Fundação:" FontSize="18" TextColor="Black" Padding="10" />
                     <Label Text="A WSTowers Foi fundada em 1980 com o intuito de promover locais para que eventos sejam feitos. No ano de 2005 fomos eleito os melhores em grandes organizações de eventos." FontSize="15" Padding="10"/>
 
