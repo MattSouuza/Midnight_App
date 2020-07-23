@@ -25,5 +25,20 @@ namespace WSTower_Midnight.Views
             base.OnAppearing();
             listViewEvento.ItemsSource = await App.Database1.GetEventoAsync();
         }
+
+        private async void ButtonClicked_ParticiparEvento(object sender, EventArgs e)
+        {
+            var troll = await App.Database.GetUsuarioAsync();
+            if(troll == null)
+            {
+                await DisplayAlert("ATENÇÃO", "troll", "OK");
+                return;
+            }
+            else
+            {
+                await DisplayAlert("ATENÇÃO", "Você agora esta participando do evento, fique de olho na data!!", "OK");
+                return;
+            }
+        }
     }
 }
