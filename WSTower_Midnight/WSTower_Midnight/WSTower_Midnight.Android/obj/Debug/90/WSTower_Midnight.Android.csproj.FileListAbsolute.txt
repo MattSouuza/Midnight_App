@@ -1992,3 +1992,4 @@ C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midn
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight.Android\obj\Debug\90\android\src\crc64e18a7d9a87d4f5ff\VerticalViewPager.java
 C:\Users\fic\Desktop\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight.Android\obj\Debug\90\android\src\crc64e18a7d9a87d4f5ff\VerticalViewPager_VerticalPageTransformer.java
 C:\Users\paulo\source\repos\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight.Android\obj\Debug\90\res\drawable\logo2.png
+C:\Users\paulo\source\repos\Midnight_App\WSTower_Midnight\WSTower_Midnight\WSTower_Midnight.Android\obj\Debug\90\res\drawable\festaboa.jpg

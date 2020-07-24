@@ -38,12 +38,12 @@
                         </StackLayout>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
-                <StackLayout VerticalOptions="Start" BackgroundColor="#E3A3CE">
-                    <Label Text="Sobre nós" FontSize="23" TextColor="Black" Padding="27, 20" VerticalOptions="Start" HorizontalOptions="Center" />
-
-                    <Label Text="A WSTowers Foi fundada em 1980 com o intuito de promover locais para que eventos sejam feitos. No ano de 2005 fomos eleito os melhores em grandes organizações de eventos." FontSize="15" Margin="50, 0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-
-                    <Button Text="Saiba mais" WidthRequest="200" CornerRadius="50" BackgroundColor="#312F2F" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Sobre" Margin="0, 30"/>
+                
+                <StackLayout BackgroundColor="#E3A3CE">
+                    <Label Text="Cadastre seu evento!" FontSize="27" TextColor="Black" Padding="0, 30" VerticalOptions="Start" HorizontalOptions="Center" />
+                    <Image Source="festaboa.jpg" Margin="0, -60, 0, -60" HeightRequest="400" WidthRequest="400"/>
+                    <Label Text="Não se interessou em nenhum evento? Crie o seu próprio evento!" FontSize="15" Margin="50, 20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <Button Text="Cadastrar Evento" WidthRequest="200" CornerRadius="50" BackgroundColor="#312F2F" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_CadastroEvento" Margin="0, 0, 0, 30"/>
                 </StackLayout>
 
                 <StackLayout VerticalOptions="Start" BackgroundColor="#312F2F">
@@ -57,7 +57,15 @@
                         <Image Source="bgs.png" Margin="10, 0 ,10, 20" HeightRequest="140" WidthRequest="140"/>
                     </StackLayout>
                     <Button Text="Ver Eventos" WidthRequest="200" CornerRadius="50" BackgroundColor="#DB36A4" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Evento" Margin="0, 0, 0, 30"/>
-                    <Button Text="Cadastrar Evento" WidthRequest="200" CornerRadius="50" BackgroundColor="#DB36A4" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_CadastroEvento" Margin="0, 0, 0, 30"/>
+
+                <StackLayout VerticalOptions="Start" BackgroundColor="#E3A3CE">
+                    <Label Text="Sobre nós" FontSize="23" TextColor="Black" Padding="27, 20" VerticalOptions="Start" HorizontalOptions="Center" />
+
+                    <Label Text="A WSTowers Foi fundada em 1980 com o intuito de promover locais para que eventos sejam feitos. No ano de 2005 fomos eleito os melhores em grandes organizações de eventos." FontSize="15" Margin="50, 0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Button Text="Saiba mais" WidthRequest="200" CornerRadius="50" BackgroundColor="#312F2F" TextColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Clicked="ButtonClicked_Sobre" Margin="0, 30"/>
+                </StackLayout>
+
                 </StackLayout>
             </StackLayout>
         </ScrollView>
